@@ -15,5 +15,13 @@ pygame.display.set_caption('SUPER MACIEL BROS')
 title_size = 100 #tamanho de cada titulo 
 FPS = 30
 
-# Define algumas variaveis com as cores 
+background = pygame.image.load('fundo_pygame.png').convert()
 
+game = True
+while game:
+
+    for event in pygame.event.get():
+        if event.type == pygame.QUIT:
+            game = False
+    window.blit(background, (0, 0))
+    pygame.display.update()
