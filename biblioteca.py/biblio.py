@@ -25,3 +25,15 @@ while game:
             game = False
     window.blit(background, (0, 0))
     pygame.display.update()
+
+# Inicia estrutura de dados 
+game = True
+posicao_maciel = 1300
+
+# Fazendo o personagem Pular 
+
+
+# Define algumas variaveis com as cores 
+
+# Finalizaçao do jogo 
+pygame.quit() # Funçao do pygame que Finaliza o jogo 
