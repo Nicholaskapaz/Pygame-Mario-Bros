@@ -3,6 +3,7 @@ import pygame
 import random
 from os import path
 
+
 pygame.mixer.init()
 pygame.init()
 
@@ -16,6 +17,7 @@ title_size = 100 #tamanho de cada titulo
 FPS = 30
 
 background = pygame.image.load('fundo_pygame.png').convert()
+Personagem_maciel = pygame.image.load('personagem_maciel.png').convert()
 
 game = True
 while game:
@@ -24,7 +26,9 @@ while game:
         if event.type == pygame.QUIT:
             game = False
     window.blit(background, (0, 0))
+    window.blit(Personagem_maciel, (0, 100))
     pygame.display.update()
+
 
 # Inicia estrutura de dados 
 game = True
