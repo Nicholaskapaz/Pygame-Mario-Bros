@@ -37,6 +37,28 @@ posicao_maciel = 1300
 # Fazendo o personagem Pular 
 
 
+# Fazendo o personagem andar
+while game:
+
+    for event in pygame.event.get():
+        if event.type == pygame.QUIT:
+            game = False
+        if event.type == pygame.KEYDOWN:
+            if event.key == pygame.K_LEFT:
+                personagem_maciel.speedx -= 8
+            if event.key == pygame.K_RIGHT:
+                personagem_maciel.speedx += 8 
+        if event.type == pygame.KEYUP:
+            if event.key == pygame.K_LEFT:
+                personagem_maciel.speedx -= 8
+            if event.key == pygame.K_RIGHT:
+                personagem_maciel.speedx += 8 
+
+        
+
+            
+
+
 # Define algumas variaveis com as cores 
 
 
