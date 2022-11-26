@@ -39,5 +39,6 @@ posicao_maciel = 1300
 
 # Define algumas variaveis com as cores 
 
+
 # Finalizaçao do jogo 
 pygame.quit() # Funçao do pygame que Finaliza o jogo 
