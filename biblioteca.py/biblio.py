@@ -9,8 +9,8 @@ pygame.init()
 
 # Tela principal 
 titulo = 'SUPER MACIEL BROS'
-width = 1250 #largura da tela 
-height = 600 #altura da tela 
+width = 1200 #largura da tela 
+height = 390 #altura da tela 
 window = pygame.display.set_mode((width,height))
 pygame.display.set_caption('SUPER MACIEL BROS')
 title_size = 100 #tamanho de cada titulo 
@@ -26,7 +26,7 @@ while game:
         if event.type == pygame.QUIT:
             game = False
     window.blit(background, (0, 0))
-    window.blit(personagem_maciel, (0, 170))
+    window.blit(personagem_maciel, (50, 216))
     pygame.display.update()
 
 
