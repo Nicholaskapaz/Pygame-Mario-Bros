@@ -17,7 +17,7 @@ title_size = 100 #tamanho de cada titulo
 FPS = 30
 
 background = pygame.image.load('fundo_pygame.png').convert()
-Personagem_maciel = pygame.image.load('personagem_maciel.png').convert()
+personagem_maciel = pygame.image.load('personagem_maciel.png')
 
 game = True
 while game:
@@ -26,7 +26,7 @@ while game:
         if event.type == pygame.QUIT:
             game = False
     window.blit(background, (0, 0))
-    window.blit(Personagem_maciel, (0, 100))
+    window.blit(personagem_maciel, (0, 170))
     pygame.display.update()
 
 
