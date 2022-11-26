@@ -36,7 +36,6 @@ posicao_maciel = 1300
 
 # Fazendo o personagem Pular 
 
-
 # Fazendo o personagem andar
 while game:
 
@@ -53,11 +52,7 @@ while game:
                 personagem_maciel.speedx -= 8
             if event.key == pygame.K_RIGHT:
                 personagem_maciel.speedx += 8 
-
         
-
-            
-
 
 # Define algumas variaveis com as cores 
 
