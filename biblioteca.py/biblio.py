@@ -18,6 +18,7 @@ FPS = 30
 
 background = pygame.image.load('fundo_pygame.png').convert()
 personagem_maciel = pygame.image.load('personagem_maciel.png')
+pedra = pygame.image.load('pedra.png')
 
 game = True
 while game:
