@@ -24,6 +24,8 @@ y = 0
 
 background = pygame.image.load('fundo_pygame.png').convert()
 personagem_maciel = pygame.image.load('personagem_maciel.png')
+pedra = pygame.image.load('pedra.png')
+leao = pygame.image.load('leao.png')
 
 def load_assets():
     assets = {}
