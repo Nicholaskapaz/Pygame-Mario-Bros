@@ -97,21 +97,49 @@ while game:
 # Inicia estrutura de dados 
 game = True
 posicao_maciel = 1300
+posicao_x, posicao_y = 400, 600
 
 # Fazendo o personagem Pular 
+pular = False
+gravidade_y = 1
+pulo = 20
+velocidade_y = pulo
 
+
+parado = pygame.transform.scale(pygame.image.load('assets/personagem_maciel.png'), (48, 64))
+pulando = pygame.transform.scale(pygame.image.load('assets/'), (48, 64))
+
+maciel_rect = parado.get_rect(center=(posicao_x, posicao_y))
 # Fazendo o personagem andar
 while game:
     clock = pygame.time.Clock()
     groups = dict
     all_sprites = pygame.sprite.Group()
     all_bricks = pygame.sprite.Group()
-    groups['all_spites'] = all_sprites
+    groups['all_sprites'] = all_sprites
 
 
     for event in pygame.event.get():
         if event.type == pygame.QUIT:
             game = False
+
+    keys_pressed = pygame.key.get_pressed()
+
+    if keys_pressed[pygame.K_SPACE]:
+        pular = True
+
+    if pular:
+        posicao_y -= velocidade_y
+        velocidade_y -= gravidade_y
+        if velocidade_y <- pulo:
+            pular = False
+            velocidade_y = pulo
+        maciel_rect = pulando.get_rect(center=(posicao_x, posicao_y))
+        window.blit(pulando, maciel_rect)
+    else:
+        maciel_rect = parado.get_rect(center=(posicao_x, posicao_y))
+        window.blit(parado, maciel_rect)
+
         if event.type == pygame.KEYDOWN:
             if event.key == pygame.K_LEFT:
                 personagem_maciel.speedx -= 8
