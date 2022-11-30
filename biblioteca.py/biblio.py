@@ -33,6 +33,8 @@ def load_assets():
     assets['mapa'] = pygame.transform.scale(assets['mapa'],(width,height)) 
     assets['personagem_maciel'] = pygame.image.load('sprite/personagem_maciel.png').convert_alpha()
     assets['personagem_maciel'] = pygame.transform.scale(assets['personagem_maciel'],(w_m,h_m))
+    assets['maciel_pulando'] = pygame.image.load('sprite/maciel_pulando.png').convert_alpha()
+    assets['maciel_pulando'] = pygame.transform.scale(assets['maciel_pulando'],(w_m,h_m))
     assets['pedra'] = pygame.image.load('sprite/pedra.png').convert_alpha()
     assets['pedra'] = pygame.transform.scale(assets['personagem_maciel'],(w_p,h_p))
     return assets
@@ -107,7 +109,7 @@ velocidade_y = pulo
 
 
 parado = pygame.transform.scale(pygame.image.load('assets/personagem_maciel.png'), (48, 64))
-pulando = pygame.transform.scale(pygame.image.load('assets/'), (48, 64))
+pulando = pygame.transform.scale(pygame.image.load('assets/maciel_pulando.png'), (48, 64))
 
 maciel_rect = parado.get_rect(center=(posicao_x, posicao_y))
 # Fazendo o personagem andar
